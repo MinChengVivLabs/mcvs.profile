@@ -1,0 +1,21 @@
+capsule {
+  id (mcvs.profile)
+  version (0.2.1)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US)
+  }
+  runtime-flags {
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+    support-halt-effect-in-computed-inputs
+  }
+  capsule-imports {
+    import (viv.self) {
+      version (3.5.41)
+    }
+  }
+  permissions {
+    user-profile-access
+  }
+}

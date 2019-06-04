@@ -1,0 +1,11 @@
+action (ActionDisplayProfile) {
+  description (__DESCRIPTION__)
+  type (Search)
+  collect {
+    input (self) {
+      type (viv.self.Self)
+      min (Required) max (One)
+    }
+  }
+  output (TypeTextResult)
+}
